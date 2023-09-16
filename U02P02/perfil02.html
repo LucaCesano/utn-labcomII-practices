@@ -9,23 +9,76 @@
     <p>Para Iniciar Sesion es necesario que complete sus datos</p>
     <form>
         <fieldset>
+            <legend>Datos Personales</legend>
             <label for="estudiante">Estudiante</label>
-            <input readonly type="text" name="estudiante" id="estudiante">
+            <input type="text" value="Texto" readonly/>
+            <br>
+            <br>
             <label for="nombreDeUsuario">Nombre de Usuario</label>
-            <input type="text" name="nombreDeUsuario" id="nombreDeUsuario"/>
-            <label for="contraseña">Contrasenia</label>
-            <input type="password" name="contraseña" id="contraseña" size="28"/>
+            <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" size="21" required/>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="34" required/>
+            <br>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" required>
+            <br>
+            <br>
+            <label for="nacionalidad">Nacionalidad</label>
+            <select id="nacionalidad">
+                <option value="opcion00">Seleccionar</option>
+                <option value="opcion01">Argentina</option>
+                <option value="opcion02">Brasil</option>
+                <option value="opcion03">Uruguay</option>
+                <option value="opcion04">Paraguay</option>
+                <option value="opcion05">Bolivia</option>
+                <option value="opcion06">Colombia</option>
+                <option value="opcion07">Venezuela</option>
+                <option value="opcion08">Ecuador</option>
+                <option value="opcion09">Chile</option>
+            </select>
+            <br>
+            <br>
+            <label for="condicionLaboral">Condición Laboral</label>
+            <select id="condicionLaboral">
+                <option value="opcion01">Desempleado</option>
+                <option value="opcion02">Busqueda Laboral</option>
+                <option value="opcion03">Part Time</option>
+                <option value="opcion04">Full Time</option>
+            </select>
+            <br>
+            <br>
             <input type="submit">
         </fieldset>
-     
-        <br>
-        <br>
-        <label for="checkbox">Recordar Datos?</label>
-        <br>
-        <label for="checkbox">Si</label>
-        <input type="radio" name="checkbox" id="checkbox">
-        <label for="checkbox">No</label>
-        <input type="radio" name="checkbox" id="checkbox" >
+        <p></p>
+        <fieldset>
+            <legend>Gustos Personales</legend>
+            <label for="musica">Gustos Musicales</label>
+            <input type="text" id="musica" name="musica">
+            <br>
+            <br>
+            <label for="comida">Comida Favorita</label>
+            <select name="comida" id="comida">
+                <option value="opcion01">Hamburguesa</option>
+                <option value="opcion02">Milanesa</option>
+                <option value="opcion03">Pizza</option>
+                <option value="opcion04">Empanadas</option>
+                <option value="opcion05">Asado</option>
+                <option value="opcion06">Pastas</option>
+            </select>
+            <br>
+            <br>
+            <p>Recordar Datos?</p>
+            <label for="checkbox">Si</label>
+            <input type="radio" name="checkbox" id="checkbox">
+            <label for="checkbox">No</label>
+            <input type="radio" name="checkbox" id="checkbox" >
+            <br>
+            <br>
+            <input type="submit">
+        </fieldset>
     </form>
 </body>
 </html>
